@@ -1,0 +1,12 @@
+.profile-pic {
+  height: 100vh;
+  padding-top: 20px; /* Adds some spacing from the top */
+}
+
+.avatar-image {
+  width: 128px; /* Square dimensions */
+  height: 128px; /* Square dimensions */
+  border-radius: 50%; /* Makes it circular */
+  border: 4px solid #e2e8f0; /* Optional border */
+  overflow: hidden; /* Ensures content is clipped within the circle */
+}
