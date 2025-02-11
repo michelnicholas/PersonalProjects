@@ -1,9 +1,10 @@
 .profile-pic {
-  width: 180px; /* Square dimensions */
+  width: 180px;
+  height: 180px; /* Square dimensions */
   border-radius: 50%; /* Makes it circular */ /* Optional border */
   object-fit: cover;
   overflow: hidden;
-  object-position: top; /* Adds some spacing from the top */
+  object-position: center; /* Adds some spacing from the top */
 }
 
 .profile-pic-container {
@@ -18,6 +19,13 @@
   justify-content: center;
   align-items: center;
   padding-top: 5px;
+}
+
+.header-info {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .header-text {
@@ -45,4 +53,16 @@
   padding: 10px;
   text-align: center; /* Center the text */
   width: 100%; /* Ensure the work entry takes full width */
+}
+.indented {
+  display: block; /* Moves text to a new line */
+  text-indent: 20px; /* Indents the text */
+  margin-top: 5px; /* Optional spacing */
+}
+
+.line {
+  width: 90%;
+  margin: 30px auto;
+  border-top: 2px dashed white;
+  border-bottom: 2px dashed white;
 }

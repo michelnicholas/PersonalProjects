@@ -1,7 +1,15 @@
 function Header() {
   return (
     <header>
-      <h1 className="header">My Resume</h1>
+      <h1 className="header">Michel Nicholas</h1>
+      <span className="header-info">
+        Software Engineer <br />
+        <span>5714126186</span>
+        <br />
+        <span>michelnicholas1993@gmail.com</span>
+      </span>
+      <p className="header-info"></p>
+      <hr className="line" />
       <p className="header-text">
         Over 6 Years of Information Technology Experience as Quality Assurance /
         Software Engineer in Test working in Agile Scrum methodology. Excellent
@@ -15,6 +23,7 @@ function Header() {
         Selenium and WebDriver and in Testing Database Applications in ORACLE
         and DB2.
       </p>
+      <hr className="line" />
     </header>
   );
 }
