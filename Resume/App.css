@@ -66,3 +66,29 @@
   border-top: 2px dashed white;
   border-bottom: 2px dashed white;
 }
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.linked-in {
+  margin-right: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.linked-in:hover {
+  color: #0077b5; /* LinkedIn blue */
+}
+
+.github {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.github:hover {
+  color: #0077b5;
+}
