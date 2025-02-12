@@ -1,7 +1,7 @@
 function Header() {
   return (
     <header>
-      <h1 className="header">Michel Nicholas</h1>
+      <h2 className="header">Michel Nicholas</h2>
       <span className="header-info">
         Software Engineer <br />
         <span>5714126186</span>
@@ -23,7 +23,6 @@ function Header() {
         Selenium and WebDriver and in Testing Database Applications in ORACLE
         and DB2.
       </p>
-      <hr className="line" />
     </header>
   );
 }

@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+}
+
+.left-section {
+  flex: 000%;
+  width: 200px; /* Fixed width for the left section */
+  background: linear-gradient(
+    188deg,
+    rgba(14, 38, 63, 1) 0%,
+    rgba(10, 22, 90, 1) 100%
+  );
+  /* Left side color */
+}
+
+.right-section {
+  flex: 65%;
+  background: linear-gradient(
+    188deg,
+    rgba(14, 38, 63, 1) 0%,
+    rgba(10, 22, 90, 1) 100%
+  );
+}
