@@ -1,5 +1,6 @@
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import Summary from "./Summary";
 
 const workHistory = [
   {
@@ -64,6 +65,7 @@ function WorkHistory() {
         />
       </div>
       <div>
+        <Summary />
         <h2 className="work-history">Work History</h2>
         <hr className="line-2"></hr>
         {workHistory.map((job, index) => (

@@ -1,15 +1,8 @@
-function Header() {
+function Summary() {
   return (
-    <header>
-      <h2 className="header"></h2>
-      <span className="header-info">
-        Software Engineer / SDET <br />
-        <span>5714126186</span>
-        <br />
-        <span>michelnicholas1993@gmail.com</span>
-      </span>
-      <p className="header-info"></p>
-      <hr className="line" />
+    <>
+      <h2 className="summary">Summary</h2>
+      <hr className="line-2" />
       <p className="header-text">
         Over 6 Years of Information Technology Experience as Quality Assurance /
         Software Engineer in Test working in Agile Scrum methodology. Excellent
@@ -23,8 +16,8 @@ function Header() {
         Selenium and WebDriver and in Testing Database Applications in ORACLE
         and DB2.
       </p>
-    </header>
+    </>
   );
 }
 
-export default Header;
+export default Summary;

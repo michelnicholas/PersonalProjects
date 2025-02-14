@@ -1,16 +1,18 @@
 import "/styles.css"; // Import the CSS file
 import ProfilePic from "./ProfilePic";
 import WorkHistory from "./WorkHistory";
-import Header from "./Header"; // Import the ProfilePic component
+import SideHeader from "./SideHeader"; // Import the ProfilePic component
+import TopHeader from "./TopHeader";
 
 export default function VerticalDivider() {
   return (
     <div className="container">
       <div className="left-section">
         <ProfilePic />
-        <Header />
+        <SideHeader />
       </div>
       <div className="right-section">
+        <TopHeader />
         <WorkHistory />
       </div>
     </div>

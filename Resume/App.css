@@ -33,13 +33,13 @@
 
 .header-text {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
   font-size: 15px;
-  margin-left: 10px;
+  margin-left: 45px;
   margin-right: 20px;
-  color: white;
+  color: rgba(4, 41, 105, 1);
 }
 
 .indented {
@@ -92,7 +92,7 @@
 .work-history {
   align-items: left; /* Center the content horizontally */
   text-align: left;
-  padding-top: 50px;
+  padding-top: 30px;
   margin-left: 35px; /* Center the text */
 }
 
@@ -116,4 +116,28 @@ li {
 }
 
 .linked-in-text {
+}
+
+.summary {
+  align-items: left; /* Center the content horizontally */
+  text-align: left;
+  padding-top: 50px;
+  margin-left: 40px;
+}
+
+.last-name {
+  font-weight: normal;
+}
+
+.top-header {
+  margin-left: 150px;
+  padding-top: 25px;
+}
+
+.line-3 {
+  width: 10%;
+  margin-left: 0; /* Removes auto centering on the left */
+  margin-right: auto; /* Keeps the right side aligned */
+  border-top: 5px solid;
+  border-bottom: 5px;
 }
