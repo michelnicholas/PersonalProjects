@@ -1,9 +1,9 @@
 function Header() {
   return (
     <header>
-      <h2 className="header">Michel Nicholas</h2>
+      <h2 className="header"></h2>
       <span className="header-info">
-        Software Engineer <br />
+        Software Engineer / SDET <br />
         <span>5714126186</span>
         <br />
         <span>michelnicholas1993@gmail.com</span>

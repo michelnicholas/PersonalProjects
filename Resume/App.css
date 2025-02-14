@@ -84,14 +84,16 @@
 .work-entry {
   margin-bottom: 0px;
   padding: 15px;
-  text-align: center; /* Center the text */
+  text-align: left;
+  margin-left: 35px; /* Center the text */
   /* width: 100%; Ensure the work entry takes full width */
 }
 
 .work-history {
-  align-items: center; /* Center the content horizontally */
-  text-align: center;
-  padding-top: 50px; /* Center the text */
+  align-items: left; /* Center the content horizontally */
+  text-align: left;
+  padding-top: 50px;
+  margin-left: 35px; /* Center the text */
 }
 
 ul {
@@ -102,8 +104,8 @@ ul {
 }
 
 .line-2 {
-  width: 90%;
-  margin: 30px auto;
+  width: 95%;
+  margin: 20px auto;
   border-top: 2px dashed;
   border-bottom: 2px;
 }
