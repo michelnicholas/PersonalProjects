@@ -4,18 +4,31 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 const workHistory = [
   {
     year: "2023",
-    title: "Software Engineer",
-    description: "Built scalable web apps.",
+    title: "Lead Quality Assurance Automation Enginner",
+    description: [
+      "Participating on various Scrum ceremonies such as: Daily Scrum (daily standup), Sprint Planning, Sprint Review, Sprint Demo, Sprint Retrospective, Backlog Refinement/grooming and Scrum of Scrum.",
+      "Optimized Continuous integration and continous development(CI/CD) pipeline and implemention continous testing",
+      "Create and implement test automation framework from scratch",
+      "High skilled Regression Testing, Functional Testing adn system integration testing",
+    ],
   },
   {
     year: "2021",
     title: "Frontend Developer",
-    description: "Worked on UI/UX for e-commerce sites.",
+    description: [
+      "Worked on UI/UX for e-commerce.",
+      "Implemented responsive design.",
+      "Improved accessibility.",
+    ],
   },
   {
     year: "2019",
     title: "Intern",
-    description: "Learned React and JavaScript fundamentals.",
+    description: [
+      "Learned React and JavaScript.",
+      "Assisted in bug fixes.",
+      "Wrote documentation.",
+    ],
   },
 ];
 
@@ -51,7 +64,15 @@ function WorkHistory() {
             <h3>
               {job.title} ({job.year})
             </h3>
-            <p>{job.description}</p>
+            {Array.isArray(job.description) && job.description.length > 0 ? (
+              <ul>
+                {job.description.map((point, i) => (
+                  <li key={i}>{point}</li>
+                ))}
+              </ul>
+            ) : (
+              <p>No description available.</p>
+            )}
           </div>
         ))}
       </div>
