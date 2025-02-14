@@ -65,6 +65,7 @@ function WorkHistory() {
       </div>
       <div>
         <h2 className="work-history">Work History</h2>
+        <hr className="line-2"></hr>
         {workHistory.map((job, index) => (
           <div key={index} className="work-entry">
             <h2>{job.company}</h2>

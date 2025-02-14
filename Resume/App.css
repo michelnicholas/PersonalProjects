@@ -1,10 +1,11 @@
 .profile-pic {
   width: 180px;
   height: 180px; /* Square dimensions */
-  border-radius: 50%; /* Makes it circular */ /* Optional border */
+  border-radius: 50%; /* Makes it circular */
   object-fit: cover;
   overflow: hidden;
   object-position: center; /* Adds some spacing from the top */
+  border: 3px solid white; /* Adds a white border */
 }
 
 .profile-pic-container {
@@ -19,6 +20,7 @@
   justify-content: center;
   align-items: center;
   padding-top: 5px;
+  color: white;
 }
 
 .header-info {
@@ -26,6 +28,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: white;
 }
 
 .header-text {
@@ -36,6 +39,7 @@
   font-size: 15px;
   margin-left: 10px;
   margin-right: 20px;
+  color: white;
 }
 
 .indented {
@@ -95,6 +99,13 @@ ul {
   list-style-position: inside; /* Move bullets closer to text */
   padding-left: 0; /* Remove extra indentation */
   margin-left: 0; /* Ensure no unnecessary left margin */
+}
+
+.line-2 {
+  width: 90%;
+  margin: 30px auto;
+  border-top: 2px dashed;
+  border-bottom: 2px;
 }
 
 li {
