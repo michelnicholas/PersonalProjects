@@ -17,18 +17,11 @@
 
 .header {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   padding-top: 5px;
   color: white;
-}
-
-.header-info {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
+  margin-left: 20px;
 }
 
 .header-text {
@@ -109,6 +102,22 @@ ul {
   border-top: 2px solid;
   border-bottom: 2px;
 }
+/* styles.css */
+.white-bullets {
+  list-style-type: none; /* Removes default bullets */
+  padding-left: 20px; /* Adds left padding for space */
+}
+
+.white-bullets li::before {
+  content: "•"; /* Custom bullet */
+  color: white; /* Sets the bullet color to white */
+  font-size: 20px; /* Size of the bullet */
+  margin-right: 10px; /* Space between bullet and text */
+}
+
+.skills {
+  color: white;
+}
 
 li {
   margin: 2px 0;
@@ -140,4 +149,28 @@ li {
   margin-right: auto; /* Keeps the right side aligned */
   border-top: 5px solid;
   border-bottom: 5px;
+}
+
+.header-info {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  color: white;
+  padding-left: 20px;
+  flex-wrap: wrap;
+}
+
+.icon {
+  float: left; /* Float the icons to the left */
+  /* Add spacing below icons if needed */
+  margin-right: 10px; /* Add spacing between the icon and text */
+  margin-bottom: 10px; /* Add spacing below icons if needed */
+}
+
+.contact-spacing {
+  padding-bottom: 20px;
+  display: inline-block; /* Ensure the paragraph behaves like inline text */
+  margin: 5px 0; /* Adjust spacing around the text */
+  font-size: 0.9em;
 }
