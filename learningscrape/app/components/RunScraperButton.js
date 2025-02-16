@@ -1,22 +1,37 @@
 "use client";
-import React from "react";
 
-import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 const RunScraperButton = () => {
-  const router = useRouter();
-  function handleClick() {
-    router.push(`/?runScraperButton=${true}`);
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(false);
+
+  async function handleClick() {
+    setLoading(true);
+    const response = await fetch("/api/scrape");
+    const result = await response.json();
+    setData(result);
+    setLoading(false);
   }
 
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <button
         onClick={handleClick}
-        className="bg-blue-500 text-white rounded-lg py-3 px-5"
+        className="bg-blue-500 text-white rounded-lg py-3 px-5 mt-10"
       >
-        Run Scraper
+        {loading ? "Scraping..." : "Get NBA Score"}
       </button>
+      {data && data.success && (
+        <div className="mt-4 text-white">
+          <p>
+            {data.score.team1}: {data.score.score1}
+          </p>
+          <p>
+            {data.score.team2}: {data.score.score2}
+          </p>
+        </div>
+      )}
     </div>
   );
 };
