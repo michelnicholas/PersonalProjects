@@ -40,3 +40,16 @@
 var map = function (arr, fn) {
   return arr.map(fn);
 };
+
+var map = function (arr, fn) {
+  const res = [];
+
+  for (const i in arr) {
+    res[i] = fn(arr[i], Number(i));
+  }
+
+  return res;
+};
+
+//functional programming vs procedural programming
+// no state, no variables
