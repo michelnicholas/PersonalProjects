@@ -6,3 +6,5 @@ function addUpTo(n) {
   return total;
 }
 console.log(addUpTo(6));
+
+//Big O notation n(0)
